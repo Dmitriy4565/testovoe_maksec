@@ -6,28 +6,38 @@
 ## Установка
 
 Склонируйте репозиторий:
-````git clone https://github.com/Dmitriy4565/testovoe_maksec.git
-cd testovoe_maksec````
+```bash
+git clone https://github.com/Dmitriy4565/testovoe_maksec.git
+cd testovoe_maksec
+```
 
 ## В корне проекта выполните команды :
 
+```bash
 go mod tidy
 go build -o server ./cmd/server
 go build -o cli ./cmd/cli
+```
 
 ## Запуск сервера
 
-Для запуска HTTP‑сервера в первой консоли выполните:
+### Для запуска HTTP‑сервера в первой консоли выполните:
 
+```bash
 ./server 
+```
 
-Во второй консоли, при запущенном сервере:\
+### Во второй консоли, при запущенном сервере:
 
+```bash
 ./cli --ip 8.8.8.8 --port 53 (подставляйте свой port/ip)
+```
 
-Пример ожидаемого вывода:
+### Пример ожидаемого вывода:
 
+```bash
 {"ip":"8.8.8.8","port":53,"status":"open"}
+```
 
 Поле `status` принимает значения `open` или `closed` в зависимости от результата установки TCP‑соединения с указанным IP и портом
 
