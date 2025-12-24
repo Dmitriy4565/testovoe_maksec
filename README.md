@@ -6,8 +6,8 @@
 ## Установка
 
 Склонируйте репозиторий:
-git clone https://github.com/Dmitriy4565/testovoe_maksec.git
-cd testovoe_maksec
+````git clone https://github.com/Dmitriy4565/testovoe_maksec.git
+````cd testovoe_maksec
 
 ## В корне проекта выполните команды :
 
